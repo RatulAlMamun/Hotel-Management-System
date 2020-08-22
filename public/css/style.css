@@ -1,0 +1,682 @@
+/*===============================================
+                    GOOGLE FONTS
+=================================================*/
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: .0625rem;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+hr {
+  border: solid 1px red;
+}
+
+.btn {
+  border-radius: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: 0;
+  border-color: #a35638;
+}
+
+.btn-block {
+  outline: none;
+  border: 0;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-sm {
+  width: 100px !important;
+  padding: .5rem 0;
+  -webkit-transition: .6s ease-in;
+  transition: .6s ease-in;
+}
+
+.btn-sm:hover {
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+}
+
+.btn-lg {
+  width: 150px;
+  padding: .4rem;
+  background: #025467;
+  color: #fff;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.btn-lg:hover {
+  background: #037c99;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  color: #e6e6e6;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+  border-radius: 0 !important;
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+input[type="text"]:active,
+input[type="date"]:active,
+input[type="email"]:active,
+input[type="password"]:active,
+input[type="tel"]:active,
+textarea:active,
+select:active {
+  outline: none;
+  border-color: #333;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background: #D3B34D;
+  outline: none;
+  border-radius: 1.25rem;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+input:checked[type="checkbox"] {
+  background: #012B35;
+  -webkit-box-shadow: 0 0 5px #D3B34D, 0 0 15px #D3B34D;
+          box-shadow: 0 0 5px #D3B34D, 0 0 15px #D3B34D;
+}
+
+input[type="checkbox"]:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #012B35;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  /*transform: scale(.98, .96);*/
+}
+
+input:checked[type="checkbox"]:before {
+  left: 20px;
+}
+
+input:checked[type="checkbox"]:after {
+  left: 105px;
+  background: #012B35;
+  -webkit-box-shadow: 0 0 5px #D3B34D, 0 0 15px #D3B34D;
+          box-shadow: 0 0 5px #D3B34D, 0 0 15px #D3B34D;
+}
+
+.form-check-label {
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+
+.personal-info .form-control {
+  border: solid 1px #012B35 !important;
+}
+
+.personal-info .form-control:focus {
+  border-color: #D3B34D !important;
+}
+
+/*=======================================================
+                        HEADER
+=========================================================*/
+.header {
+  width: 100%;
+}
+
+.header .navbar {
+  width: 100%;
+  border-bottom: 2px solid #002506;
+  background: #012B35 !important;
+  padding: 0 4rem !important;
+}
+
+.header .navbar .navbar-brand img {
+  height: 3.4rem;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
+  color: #D3B34D !important;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  font-weight: bold;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #cc0000 !important;
+}
+
+.header .navbar .navbar-nav .nav-item.active .nav-link {
+  cursor: pointer;
+  color: red !important;
+}
+
+/*=======================================================
+                        SLIDER
+=========================================================*/
+.slider .slide {
+  width: 100%;
+}
+
+.slider .slide .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.slider .slide .carousel-inner {
+  width: 100%;
+  height: 460px;
+}
+
+.slider .slide .carousel-inner .carousel-item {
+  width: 100%;
+}
+
+.slider .slide .carousel-inner .carousel-item img {
+  width: 100% !important;
+  height: auto;
+}
+
+.book {
+  margin-top: 0 !important;
+  background: #012B35 !important;
+  text-align: center;
+  padding: 1.15rem;
+}
+
+.book .input-group {
+  border-radius: 0;
+}
+
+.book .input-group input, .book .input-group select {
+  background: none;
+}
+
+.book .btn-dark {
+  padding: 1.65rem 0;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .header .center {
+    margin: 14rem 0 10rem;
+  }
+}
+
+/*=======================================================
+                        SERVICES
+=========================================================*/
+.service {
+  height: 100vh;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.service h1 {
+  color: #012B35;
+  margin-top: 3rem;
+}
+
+.service .title-bottom {
+  margin: 0 auto;
+  background: red;
+  height: 2px;
+  padding: .15rem;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.service .card {
+  color: black !important;
+  border: 0 !important;
+  background: transparent;
+  padding: 0 !important;
+}
+
+.service .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.service .card img {
+  -webkit-transition: -webkit-transform .6s ease-in;
+  transition: -webkit-transform .6s ease-in;
+  transition: transform .6s ease-in;
+  transition: transform .6s ease-in, -webkit-transform .6s ease-in;
+}
+
+.service .card .card-body .text-dark {
+  color: #012B35 !important;
+}
+
+/*=======================================================
+                        FECILITY
+=========================================================*/
+.facility {
+  width: 100%;
+  background: #012B35;
+  opacity: .9;
+  color: #01010c;
+}
+
+.facility .card {
+  border: 1px solid #777777;
+  border-radius: 10px;
+  background-color: rgba(3, 3, 17, 0.3);
+  padding: 31px 20px 37px;
+}
+
+/*===============================================================
+                            SERVICES
+=================================================================*/
+.facilities {
+  color: #012B35;
+}
+
+.facilities .aligns {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.facilities h1.text-dark {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+}
+
+.facilities .card {
+  border-radius: 0 !important;
+  background-color: rgba(14, 26, 17, 0.7);
+  border: 0 !important;
+  z-index: 1111;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.facilities .card .card-body h6 {
+  color: white;
+}
+
+.facilities .card .card-body p {
+  color: white;
+}
+
+.facilities .card:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  -webkit-box-shadow: 2px 2px 16px 4px #2c2c2c;
+          box-shadow: 2px 2px 16px 4px #2c2c2c;
+}
+
+.facilities img {
+  border-radius: 1rem !important;
+  width: 100%;
+  height: auto;
+}
+
+/*====================================================
+                            ROOMS
+======================================================*/
+.rooms {
+  background: #e5d8bf;
+}
+
+.rooms hr {
+  border: solid 2px #553344;
+  margin: 0 auto 2rem;
+  width: 5rem;
+}
+
+.rooms .card {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.rooms .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.rooms .card .card-footer {
+  background: #012B35;
+  color: white;
+}
+
+/*====================================================
+                        ABOUT
+======================================================*/
+.about {
+  background: white;
+}
+
+.about .card {
+  background: none;
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.about .card:hover {
+  color: teal;
+}
+
+.about .card:hover .card-text {
+  color: #0e0d0d;
+}
+
+.history {
+  background: #ccc;
+  color: #012B35;
+}
+
+.history hr {
+  border: solid 2px #553344;
+  margin: 1rem auto 2rem;
+  width: 5rem;
+}
+
+.history .card {
+  background: transparent;
+}
+
+.history .about-img {
+  opacity: .75;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.history .about-img:hover {
+  opacity: 1;
+}
+
+/*====================================================
+                        CONTACT
+======================================================*/
+.contact {
+  background: #f2eee5;
+  color: #012B35;
+}
+
+.contact hr {
+  border: solid 2px red;
+  margin: 1rem auto 2rem;
+  width: 5rem;
+}
+
+.contact form .form-group label::after {
+  content: ' *';
+  color: #c71010;
+}
+
+.contact form .form-group input[type="text"],
+.contact form .form-group input[type="email"],
+.contact form .form-group input[type="tel"],
+.contact form .form-group textarea {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-radius: 0;
+}
+
+.contact form .form-group input[type="text"]:focus,
+.contact form .form-group input[type="email"]:focus,
+.contact form .form-group input[type="tel"]:focus,
+.contact form .form-group textarea:focus {
+  border-color: #e25822;
+}
+
+.contact form .form-group textarea {
+  resize: none;
+}
+
+.contact form .btn-primary {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-radius: 0;
+  background: #012B35;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .25rem;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.contact form .btn-primary:hover {
+  color: #012B35;
+  background: white;
+  border: solid 0.1rem #012B35;
+  font-weight: bold;
+}
+
+/*====================================================
+                        BOOKING
+======================================================*/
+.booking {
+  margin-top: 2rem;
+  background: white !important;
+}
+
+.booking .card {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  position: relative;
+}
+
+.booking .card .ribbon {
+  position: absolute;
+  background: #012B35;
+  color: #D3B34D;
+  font-weight: bold;
+  top: 30px;
+  left: 15px;
+  width: 320px;
+}
+
+.booking .card .ribbon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  border-top: solid 45px transparent;
+  border-right: solid 45px transparent;
+  border-bottom: solid 45px transparent;
+  border-left: solid 45px white;
+}
+
+.booking .card .ribbon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -90px;
+  border-top: solid 45px transparent;
+  border-right: solid 45px transparent;
+  border-bottom: solid 45px transparent;
+  border-left: solid 45px #012B35;
+}
+
+.booking .card .ribbon.ribbon-active {
+  background: #D3B34D !important;
+  color: #012B35;
+  font-weight: bold !important;
+}
+
+.booking .card .ribbon.ribbon-active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -90px;
+  border-top: solid 45px transparent;
+  border-right: solid 45px transparent;
+  border-bottom: solid 45px transparent;
+  border-left: solid 45px #D3B34D;
+}
+
+/*====================================================
+                        ROOM DETAILS
+======================================================*/
+.room-info .card {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.room-info .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.room-info .card .card-body figure::before {
+  content: "";
+  position: absolute;
+  border-top: solid 5px transparent;
+  border-right: solid 5px red;
+  border-bottom: solid 5px red;
+  border-left: solid 5px transparent;
+  top: -10px;
+  left: 0;
+}
+
+/*====================================================
+                        FOOTER
+======================================================*/
+.footer {
+  background: #012B35;
+}
+
+.footer .card {
+  border: 0;
+  background: transparent;
+  color: white;
+}
+
+.footer .card .card-body {
+  padding: 0;
+}
+
+.footer .service-links a {
+  color: #f8f4f1;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.footer .service-links a:hover {
+  color: #ccc;
+}
+
+.footer .social-media ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-media ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .social-media ul li a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background: #025467;
+  color: #D3B34D;
+  font-size: 24px;
+  -webkit-box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.footer .social-media ul li a:hover {
+  background: #D3B34D;
+  color: #012B35;
+}
+
+.footer .social-media ul li span {
+  visibility: hidden;
+  opacity: 1;
+  position: absolute;
+  background: rgba(1, 43, 53, 0.9);
+  color: #D3B34D;
+  display: block;
+  padding: 10px 20px;
+  font-family: tahoma;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 12px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  top: 0;
+  z-index: -1;
+}
+
+.footer .social-media ul li:hover span {
+  visibility: visible;
+  opacity: 1;
+  top: -86px;
+  color: #D3B34D;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */
